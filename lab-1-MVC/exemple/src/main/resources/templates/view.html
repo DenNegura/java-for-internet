@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+    <link rel="stylesheet" th:href="@{/styles/css/view.css}" />
+</head>
+<body>
+    <table class="table">
+        <caption class="nameTable">Table of students</caption>
+        <tr>
+            <th>Name</th>
+            <th>Roll Number</th>
+        </tr>
+        <tr th:each="student : ${students}">
+            <td>
+                <input type="text" th:value="${student.name}"/>
+            </td>
+            <td>
+                <input type="text" th:value="${student.rollNum}"/>
+            </td>
+        </tr>
+    </table>
+    <form method="POST" th:action="@{/}" th:object="${student}">
+        <table class="add">
+            <caption class="nameTable">Add student</caption>
+            <tr>
+                <th>Name</th>
+                <th>Roll Number</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" th:field="*{name}"/>
+                </td>
+                <td>
+                    <input type="text" th:field="*{rollNum}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="btn" type="reset" value="Reset"/>
+                </td>
+                <td>
+                    <input class="btn" type="submit" value="Submit"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
