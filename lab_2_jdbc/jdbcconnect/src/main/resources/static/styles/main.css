@@ -1,0 +1,20 @@
+.mainDiv {
+    float: left;
+    width: 50%;
+}
+.mainTableDish, .mainTableDish th {
+    font-size: 18px;
+    padding: 15px;
+    border: 2px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+.mainTableSearch {
+    font-size: 15px;
+    border: 2px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+.ingredients {
+    display:none;
+}

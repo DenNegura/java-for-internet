@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dishes</title>
+    <link rel="stylesheet" href="../static/styles/main.css" />
+</head>
+<body>
+<table class="mainTableSearch">
+    <tr>
+        <th>Пойск по названию:</th>
+        <td>
+            <input type="text"/>
+        </td>
+    </tr>
+    <tr>
+        <th>Пойск по категории:</th>
+        <td>
+            <input type="text"/>
+        </td>
+    </tr>
+    <tr>
+        <th rowspan="2">Сортировка по цене:</th>
+        <td>
+            От: <input type="text" size="4px" pattern="\d"/>
+            До: <input type="text" size="4px" pattern="\d"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="radio" id="sort1" name="sort" value="2"/>
+            <label for="sort1">По возростанию</label><br>
+            <input type="radio" id="sort2" name="sort" value="2"/> 
+            <label for="sort2"n>По убыванию</label>
+        </td>
+    </tr>
+</table>
+<input type="submit" value="search"/>
+<table class="mainTableDish">
+    <caption>Список блюд</caption>
+    <tr>
+        <th>Номер</th>
+        <th>Нозвание</th>
+        <th>Вес порции</th>
+        <th>Категория</th>
+        <th>Цена
+        </th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Куринный суп</td>
+        <td>340</td>
+        <td>Суп</td>
+        <td>65</td>
+    </tr>
+</table>
+</body>
+</html>

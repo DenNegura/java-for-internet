@@ -1,0 +1,13 @@
+.mainTableDish, .mainTableDish th {
+    font-size: 18px;
+    padding: 15px;
+    border: 2px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+.mainTableSerch {
+    font-size: 15px;
+    border: 2px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
